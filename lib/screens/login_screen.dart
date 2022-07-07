@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:flutter_application_1/utils/colors.dart';
+import 'package:flutter_application_1/widgets/LoginWidget.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -24,19 +26,20 @@ class LoginScreen extends StatelessWidget {
               ),
               SvgPicture.asset("assets/img/green_text.svg"),
               SizedBox(
-                height: 100,
+                height: 45,
               ),
               Text(
                 "Login",
                 style: TextStyle(
-                  fontFamily: "OpenSans",
-                  fontSize: 25.0,
+                  fontFamily: "CeraPro",
+                  fontSize: 27.0,
                   fontWeight: FontWeight.bold,
                 ),
               ),
               SizedBox(
-                height: 32,
+                height: 20,
               ),
+              LoginWidget(),
             ]),
           ),
         )));
